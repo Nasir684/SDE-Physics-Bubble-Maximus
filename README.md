@@ -1,30 +1,41 @@
 # SDE-Physics-Bubble-Maximus
+### Stochastic Bubble Dynamics with Finite-Time Blow-up and Collective Synchronization
 
-**SDE Formulation of 3D Spacetime as Maximus Stability Bubble**
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22747095.svg)](https://doi.org/10.5281/zenodo.22747095)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/Version-V1.3-red)](https://github.com/Nasir684/SDE-Physics-Bubble-Maximus/releases)
 
-**Author:** Nasir Khan | ORCID: 0009-0002-6006-0976 | Wana, Pakistan
-**DOI:** 10.5281/zenodo.22731095 | CC BY 4.0 | Sept 14, 2026
+> Small-scale stochasticity → Universal scaling → Collective Maximus energy release
 
-## LATEST: v1.2-theorem - Theorem 1.1 Proved
+---
 
-**Theorem 1.1 - Infinite Instability (Finite-Time Blow-up)**
-SDE: dR_t = (-k1/R_t^2 + k2 R_t^3)dt + sigma R_t dW_t
-Result:
-- P(T* < ∞) = 1 (finite-time explosion a.s.)
-- E[R_t^2] = ∞ as t→T* (divergence)
-- λ = +∞ a.s. (infinite Lyapunov exponent)
-- Physical: T_gas ~10^4 K sonoluminescence, P_jet→∞ cavitation damage
-- Math ∞ = Physical light
+## Overview
+This repository presents a rigorous SDE-based theory of bubble dynamics showing that arbitrarily small stochastic forcing triggers finite-time blow-up with universal scaling and collective synchronization - termed **Bubble Maximus effect**.
 
-**Files in this repo:**
-- SDE-Physics-Bubble-Maximus v1.0 main paper PDF
-- SDE-Theorem-1.1-Infinite-Instability-v1.2.pdf (NEW theorem PDF)
-- Fig1: Stability Potential Landscape
-- Fig2: Eternal Nucleation Timeline
-- Fig3: theorem_1_1_fig3.png (NEW - Theorem 1.1 visualization)
+**Core Claim:** Microscopic noise (sigma) generates macroscopic ~10^4 K temperatures and synchronized energy release.
 
-**Flow:** Instability (noise) → Bubble Maximus (metastable V_3D) → Black Hole (V→-∞ grave M,Q,J) → Hawking noise. White Hole FORBIDDEN.
+## Theorems
 
-Kramers lifetime τ = 13.8 Gyr.
+### Theorem 1.1: Infinite Instability [V1.1 / V1.2]
+Proved that bubble dynamics under SDE forcing is infinitely unstable: even as sigma -> 0, finite-time blow-up persists. Published with DOI: 10.5281/zenodo.22747095
 
-QCID Framework & SDE Physics Framework & Stability Debugger Effect Framework (2026) - Founder Nasir Khan
+### Theorem 1.2: Scaling Law and Collective Sync [V1.3 - Latest - 14 Sep 2026]
+**Main Result:** `T_blowup ~ C * sigma^alpha` where alpha < 0 is critical exponent.
+
+- Quantifies HOW FAST blow-up occurs via power-law scaling
+- Predicts physical temperature ~10^4 K from SDE singularity (links to sonoluminescence & coronal heating)
+- Proves N-bubble collective synchronization and coherent explosion
+- Code: `theorem_1_2_scaling.py` - fully reproducible
+
+**Significance:** Transforms instability proof (1.1) into testable physical law (1.2) with experimental prediction.
+
+## Files
+- `theorem_1_1_instability.py` - Proof of infinite instability
+- `theorem_1_2_scaling.py` - **NEW V1.3** Scaling law, critical exponent, 10^4 K temp, collective sync
+- `bubble_dynamics_sde.py` - Core SDE solver
+- `README.md` - This file
+
+## Reproducibility
+```bash
+python theorem_1_2_scaling.py
+# Outputs: scaling exponent alpha, T_blowup vs sigma, sync threshold, temp estimate
