@@ -1,3 +1,4 @@
+> **IP NOTICE: Patent Pending, Commercial Rights Reserved, Wana South Waziristan, Pakistan — See INTELLECTUAL_PROPERTY_NOTICE.md**
 # SDE-Physics-Bubble-Maximus
 ### Stochastic Bubble Dynamics with Finite-Time Blow-up and Collective Synchronization
 
