@@ -1,24 +1,30 @@
-## v1.2-theorem - Latest - Theorem 1.1 Proved
-Theorem PDF: SDE_Theore...pdf
-Result: P(T*<∞)=1, E[R²]=∞, λ=+∞ a.s., T_gas~10^4K
-Fig.3 added: Theorem 1.1 Infinite Instability
-DOI: 10.5281/zenodo.22731095
-# Stability Debugger Effect (SDE) Physics — QCID Framework
+# SDE-Physics-Bubble-Maximus
 
-## 3D Spacetime as Maximus Stability Bubble in Eternal Infinite Instability
+**SDE Formulation of 3D Spacetime as Maximus Stability Bubble**
 
-**Author:** Nasir Khan  
-**Founder:** QCID Framework, SDE Physics Framework, Stability Debugger Effect Framework (2026)  
-**Location:** Wana, South Waziristan, Pakistan  
-**Email:** nasirk684@gmail.com  
-**ORCID:** 0009-0002-6006-0976
+**Author:** Nasir Khan | ORCID: 0009-0002-6006-0976 | Wana, Pakistan
+**DOI:** 10.5281/zenodo.22731095 | CC BY 4.0 | Sept 14, 2026
 
-![QCID Logo](figures/qcid_framework_logo.png)
+## LATEST: v1.2-theorem - Theorem 1.1 Proved
 
-### What is SDE?
+**Theorem 1.1 - Infinite Instability (Finite-Time Blow-up)**
+SDE: dR_t = (-k1/R_t^2 + k2 R_t^3)dt + sigma R_t dW_t
+Result:
+- P(T* < ∞) = 1 (finite-time explosion a.s.)
+- E[R_t^2] = ∞ as t→T* (divergence)
+- λ = +∞ a.s. (infinite Lyapunov exponent)
+- Physical: T_gas ~10^4 K sonoluminescence, P_jet→∞ cavitation damage
+- Math ∞ = Physical light
 
-**SDE = Stability Debugger Effect** — Coined by Nasir Khan in **2026** under QCID Framework.
+**Files in this repo:**
+- SDE-Physics-Bubble-Maximus v1.0 main paper PDF
+- SDE-Theorem-1.1-Infinite-Instability-v1.2.pdf (NEW theorem PDF)
+- Fig1: Stability Potential Landscape
+- Fig2: Eternal Nucleation Timeline
+- Fig3: theorem_1_1_fig3.png (NEW - Theorem 1.1 visualization)
 
-Core principle: Reality is fundamentally infinite instability that self-debugs toward stability. Laws of physics are not fundamental — they are emergent stability wells where instability is debugged and minimized.
+**Flow:** Instability (noise) → Bubble Maximus (metastable V_3D) → Black Hole (V→-∞ grave M,Q,J) → Hawking noise. White Hole FORBIDDEN.
 
-**Mathematical Formalism (Tool, not definition):** The debugging action is formalized using stochastic differential equations as a mathematical tool:
+Kramers lifetime τ = 13.8 Gyr.
+
+QCID Framework & SDE Physics Framework & Stability Debugger Effect Framework (2026) - Founder Nasir Khan
