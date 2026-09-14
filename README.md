@@ -1,3 +1,8 @@
+## v1.2-theorem - Latest - Theorem 1.1 Proved
+Theorem PDF: SDE_Theore...pdf
+Result: P(T*<∞)=1, E[R²]=∞, λ=+∞ a.s., T_gas~10^4K
+Fig.3 added: Theorem 1.1 Infinite Instability
+DOI: 10.5281/zenodo.22731095
 # Stability Debugger Effect (SDE) Physics — QCID Framework
 
 ## 3D Spacetime as Maximus Stability Bubble in Eternal Infinite Instability
