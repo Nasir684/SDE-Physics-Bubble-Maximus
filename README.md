@@ -1,3 +1,11 @@
+### 7. PEACEFUL USE DECLARATION — NON-MILITARY
+Bubble Fusion Reactor™ (BMFR) is DECLARED FOR PEACEFUL PURPOSES ONLY.
+
+Inventor Nasir Khan, Wana, South Waziristan, Pakistan, declares:
+- BMFR is for civilian energy, medical isotopes, and research only
+- Not intended, not designed, not suitable for nuclear weapons, hydrogen bomb, or military explosive
+- Complies with Pakistan's commitment to IAEA peaceful use and non-proliferation
+- Energy per bubble < 1 mJ — Not weaponizable per IAEA micro-fusion guidelines
 ![BMFR Logo](logo_bmfr_v1_5.png)
 
 # BUBBLE FUSION REACTOR — BMFR V1.5
