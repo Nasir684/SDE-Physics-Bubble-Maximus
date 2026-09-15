@@ -1,3 +1,7 @@
+![BMFR Logo](logo_bmfr_v1_5.png)
+
+# BUBBLE FUSION REACTOR — BMFR V1.5
+### N-Sync Maximus — Wana, South Waziristan, Pakistan
 > **IP NOTICE: Patent Pending, Commercial Rights Reserved, Wana South Waziristan, Pakistan — See INTELLECTUAL_PROPERTY_NOTICE.md**
 # SDE-Physics-Bubble-Maximus
 ### Stochastic Bubble Dynamics with Finite-Time Blow-up and Collective Synchronization
