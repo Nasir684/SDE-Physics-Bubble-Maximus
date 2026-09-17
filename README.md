@@ -1,3 +1,32 @@
+# 3D Spacetime as Maximus Stability Bubble - Core Theory
+
+**Author:** Nasir Khan | ORCID 0009-0002-6006-0796 | Wana, FATA
+**DOI Chain:** Zenodo 10.5281/zenodo.22804485 | Preprints 202509.233803 (Screening 17 Sep 2026)
+
+## Core Master Equation (Hash-Verified 15 Sep 2026)
+
+$d\Phi(t) = -\nabla V(\Phi) dt + g(\Phi) dW_t - M_{stab}(\Phi) dt$
+
+Where:
+- $\Phi$ = Spacetime Stability Field (Maximus Bubble)
+- $g(\Phi)dW_t$ = QCID noise from Eternal Instability Background (Infinity)
+- $M_{stab}(\Phi)=0.5\Phi^3$ = Master Stability Regulator — **My Invention to control Infinity**
+
+> "Everyone fears Infinity. I use Infinity to control SDE." — Nasir Khan
+
+## Numerical Proof — Added 17 Sep 2026
+
+![Bubble Proof](nasir_sde.png)
+*Figure 1: Simulation shows despite infinite shaking, Φ locks to -1 = Maximus Stability Bubble (3D Spacetime)*
+
+![Probability](nasir_hist.png)
+*Figure 2: Probability peaks at Maximus point — Universe prefers stability*
+
+**Code:** EAR99, ITAR-free. See `nasir_sde.py`
+
+---
+## Below is Fusion Reactor Application of this Bubble Theory ↓
+
 ### 7. PEACEFUL USE DECLARATION — NON-MILITARY
 Bubble Fusion Reactor™ (BMFR) is DECLARED FOR PEACEFUL PURPOSES ONLY.
 
