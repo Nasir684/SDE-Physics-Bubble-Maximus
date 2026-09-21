@@ -2,10 +2,11 @@
 ### 3D Spacetime as Maximus Stability Bubble inside Eternal Instability
 
 **Founder:** Nasir Khan — ORCID 0009-0002-6006-0796 — Wana, FATA, PK
-**DOI Chain:** Concept 10.5281/zenodo.22731094 | V2.1.0 FINAL 10.5281/zenodo.22852524 | V2.9 Base 10.5281/zenodo.22812238 | **V3.1 NEW 10.5281/zenodo.[ADD AFTER PUBLISH]**
-**Zenodo Record:** https://zenodo.org/records/22852524 — Version V2.1.0 — Sep 20, 2026 — Wana — **New Version V3.1 Sep 20, 2026**
+**DOI Chain:** Concept 10.5281/zenodo.22731094 | V2.1.0 FINAL 10.5281/zenodo.22852524 | V2.9 Base 10.5281/zenodo.22812238 | **V3.1 FINAL 10.5281/zenodo.22857083**
+**Zenodo Record:** https://zenodo.org/records/22852524 — Version V2.1.0 — Sep 20, 2026 — Wana — **New Version V3.1 Sep 20, 2026: https://zenodo.org/records/22857083**
 **GitHub Release:** v2.1.0 FINAL — Sept 20, 2026 — Locked Form A | **v3.1 FINAL — Sep 20, 2026 — Universal Regulator [LATEST]**
 **Status:** GitHub ✅ Zenodo ✅ Qeios pending Sept 21 | **V3.1 GitHub ✅ Zenodo ✅ Qeios Ready**
+**LIGO File:** `Black_Hole_Evaporation_Control_Echo_Search.py` — Uploaded Sep 21, 2026
 
 > "Everyone fears Infinity. I use Infinity to control SDE." — Nasir Khan
 
@@ -15,7 +16,7 @@
 
 `dΦ(t) = -∇V(Φ)dt + g(Φ)dW_t - M_stab(Φ)dt`
 
-**Locked Form A v2.1.0:** `dΦ = -(Φ³-Φ + 0.5Φ³)dt + 0.3 dW_t`
+**Locked Form A v2.1.0:** `dΦ = -(Φ³-Φ + 0.5Φ³)dt + 0.3 dW_t` → `dΦ = -(1.5Φ³-Φ)dt + 0.3dW`
 
 - Φ(t) = Spacetime Stability Field — Our 3D Universe is a bubble
 - V(Φ)=0.25Φ⁴-0.5Φ², V'=Φ³-Φ — Double-well → Effective V_eff=0.375Φ⁴-0.5Φ² with M_stab
@@ -60,13 +61,3 @@ for i in range(1,N):
     g=0.3
     dW=np.random.normal(0,np.sqrt(dt))
     Phi[i]=Phi[i-1] + (-Vp-Mstab)*dt + g*dW
-
-# v3.1 variance check
-def run(alpha):
-    runs=10000; X=np.full(runs,0.816)
-    for i in range(int(100/1e-3)):
-        dW=np.random.randn(runs)*np.sqrt(1e-3)
-        X+= -((1+alpha)*X**3 - X)*1e-3 + 0.3*dW
-    return np.var(X)
-print(run(0.0)) # 0.22
-print(run(0.5)) # 0.12
