@@ -1,18 +1,20 @@
 # SDE-Physics-Bubble-Maximus
 ### 3D Spacetime as Maximus Stability Bubble inside Eternal Instability
 
-**Founder:** Nasir Khan — ORCID 0009-0002-6006-0796 — Wana, FATA, PK
-**DOI Chain:** Concept 10.5281/zenodo.22731094 | V2.1.0 FINAL 10.5281/zenodo.22852524 | V2.9 Base 10.5281/zenodo.22812238 | **V3.1 FINAL 10.5281/zenodo.22857083**
-**Zenodo Record:** https://zenodo.org/records/22852524 — Version V2.1.0 — Sep 20, 2026 — Wana — **New Version V3.1 Sep 20, 2026: https://zenodo.org/records/22857083**
+**Founder:** Nasir Khan — ORCID 0009-0002-6006-0796 — Wana, South Waziristan, PK — nasirk684@gmail.com
+**DOI Chain:** Concept 10.5281/zenodo.22731094 | V2.1.0 FINAL 10.5281/zenodo.22852524 | V2.9 Base 10.5281/zenodo.22812238 | V3.1 FINAL 10.5281/zenodo.22857083 | **GTI-1.0 FINAL 10.5281/zenodo.22992340 [LATEST]**
+**Zenodo Record:** https://zenodo.org/records/22852524 — Version V2.1.0 — Sep 20, 2026 — Wana — **New Version V3.1 Sep 20, 2026: https://zenodo.org/records/22857083 | GTI-1.0 FINAL: https://doi.org/10.5281/zenodo.22992340**
 **GitHub Release:** v2.1.0 FINAL — Sept 20, 2026 — Locked Form A | **v3.1 FINAL — Sep 20, 2026 — Universal Regulator [LATEST]**
-**Status:** GitHub ✅ Zenodo ✅ Qeios pending Sept 21 | **V3.1 GitHub ✅ Zenodo ✅ Qeios Ready**
-**LIGO File:** `Black_Hole_Evaporation_Control_Echo_Search.py` — Uploaded Sep 21, 2026
+**Status:** GitHub ✅ Zenodo ✅ | **Theoretical & Computational Only | No Physical Lab | SDE Simulations v4.2 seed 684 | SIM label**
+**LIGO File:** `Black_Hole_Evaporation_Control_Echo_Search.py` — Uploaded Sep 21, 2026 — Simulation code
 
 > "Everyone fears Infinity. I use Infinity to control SDE." — Nasir Khan
 
+**CORRECTION 29 Sep 2026:** Wana Lab is theoretical & computational facility. All datasets are SDE simulations. No 10-tank water analogue. Math unchanged.
+
 ---
 
-## 1. Core Master Equation — Locked Form A (v2.1.0 FINAL — unchanged in v3.1)
+## 1. Core Master Equation — Locked Form A (v2.1.0 FINAL — unchanged in v3.1 → GTI-1.0)
 
 `dΦ(t) = -∇V(Φ)dt + g(Φ)dW_t - M_stab(Φ)dt`
 
@@ -32,25 +34,27 @@ Unifies 3 things in ONE:
 **v3.1 Extension — M-Stab as Universal Regulator:**
 Same equation now proven universal: flux qubit α=0.5, finance breaker +0.5X³, BH evaporation control g 0.3→0.08
 
-## 2. Numerical Proof
+**GTI-1.0 FINAL Extension:** M_stab universal across domains, Sigma Theorem `E_steady = Σ²/2κ(1-ρ) → 0` — See https://github.com/Nasir684/GTI-General-Theory-of-Instability
 
-**v1 Proof Sept 17 (historical):**
+## 2. Numerical Proof — SDE Simulations v4.2 seed 684
+
+**v1 Proof Sept 17 (historical simulation):**
 ![Bubble Proof](nasir_sde.png)
 ![Probability](nasir_hist.png)
-Without M_stab diverges. With M_stab locks to -1.
+Without M_stab diverges. With M_stab locks to -1. — **Simulation output v4.2 SIM**
 
-**v2.1.0 FINAL Proof Sept 20 Wana Locked Form A:**
-- 10k iterations mean -0.82 var 0.12 stable
+**v2.1.0 FINAL Proof Sept 20 Wana Locked Form A — Simulation:**
+- 10k iterations mean -0.82 var 0.12 stable — **SIM**
 - Without M_stab blow-up at ~1500 steps (Starobinsky 1986)
 - 6 Figures A/B + Fig2-Fig5 + PDF + DOCX 11 sections in Zenodo 22852524
 
-**v3.1 Proof Sep 20 Wana — Full Fokker-Planck + Mao p=4 + 10k runs:**
+**v3.1 Proof Sep 20 Wana — Full Fokker-Planck + Mao p=4 + 10k runs — Simulation:**
 - Fokker-Planck stationary P_s=N exp(-2V/g²) N≈0.85 Var0=0.2203→VarM=0.1217 44.76% reduction
 - Euler dt=1e-3 T=100 N=100k runs=10k X0=0.816 g=0.3: Var 0.219→0.119 matches FP, escapes 162/10k→0/10k, long-time Kramers 1.6e-5→3.2e-8
 - Mao p=4: x·f+(p-1)/2|g|²≤C(1+|x|²) with C=1.0 p=4 → E[sup|X|⁴]<∞ no blow-up
 - K=V'' 1.0→2.0 base (2.0→3.0 scaled) 0.5→1.0 normalized
 
-**Locked Code v2.1.0 & v3.1:**
+**Locked Code v2.1.0 & v3.1 — Simulation v4.2:**
 ```python
 import numpy as np
 T=10.0; N=10000; dt=T/N
