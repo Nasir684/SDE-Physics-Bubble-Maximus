@@ -1,67 +1,45 @@
-# SDE-Physics-Bubble-Maximus
-### 3D Spacetime as Maximus Stability Bubble inside Eternal Instability
+# GTI Control Module — SDE-Physics-Bubble-Maximus — Active as Analogue
 
-**Founder:** Nasir Khan — ORCID 0009-0002-6006-0796 — Wana, South Waziristan, PK — nasirk684@gmail.com
-**DOI Chain:** Concept 10.5281/zenodo.22731094 | V2.1.0 FINAL 10.5281/zenodo.22852524 | V2.9 Base 10.5281/zenodo.22812238 | V3.1 FINAL 10.5281/zenodo.22857083 | **GTI-1.0 FINAL 10.5281/zenodo.22992340 [LATEST]**
-**Zenodo Record:** https://zenodo.org/records/22852524 — Version V2.1.0 — Sep 20, 2026 — Wana — **New Version V3.1 Sep 20, 2026: https://zenodo.org/records/22857083 | GTI-1.0 FINAL: https://doi.org/10.5281/zenodo.22992340**
-**GitHub Release:** v2.1.0 FINAL — Sept 20, 2026 — Locked Form A | **v3.1 FINAL — Sep 20, 2026 — Universal Regulator [LATEST]**
-**Status:** GitHub ✅ Zenodo ✅ | **Theoretical & Computational Only | No Physical Lab | SDE Simulations v4.2 seed 684 | SIM label**
-**LIGO File:** `Black_Hole_Evaporation_Control_Echo_Search.py` — Uploaded Sep 21, 2026 — Simulation code
+**Part of GTI Framework | Author: Nasir Khan — Wana Lab, ORCID 0009-0002-6006-0796**
+**Fundamental Layer: https://github.com/Nasir684/GTI-v2.1-eternal-instability**
+**Parent Theory: GTI v2.1 — Eternal Instability (No M_stab field)**
+**Status: ACTIVE as Control Analogue — Not fundamental field proof**
+**DOI: 10.5281/zenodo.22682258 (Historical) | License: MIT / CC BY 4.0**
 
-> "Everyone fears Infinity. I use Infinity to control SDE." — Nasir Khan
+### Framework Position
 
-**CORRECTION 29 Sep 2026:** Wana Lab is theoretical & computational facility. All datasets are SDE simulations. No 10-tank water analogue. Math unchanged.
+GTI v2.1 says: Fundamental potential is bounded, no stationary density, stability = conditional MFPT with τ_n=τ₀W_n, W_n=W₀n^{β/2}. No regulator survives at fundamental level.
 
----
+This repo asks: If we ARE allowed to add engineering coupling k(d)=k₀/d, can we mimic enhanced dwell? Yes.
 
-## 1. Core Master Equation — Locked Form A (v2.1.0 FINAL — unchanged in v3.1 → GTI-1.0)
+So this is **GTI-CM: GTI Control Module**, not GTI-F: Fundamental.
 
-`dΦ(t) = -∇V(Φ)dt + g(Φ)dW_t - M_stab(Φ)dt`
+### What It Proves (Valid)
 
-**Locked Form A v2.1.0:** `dΦ = -(Φ³-Φ + 0.5Φ³)dt + 0.3 dW_t` → `dΦ = -(1.5Φ³-Φ)dt + 0.3dW`
+SDE Form A: dX_i = -gradU dt + σ1 dW_i1 + σ2 dW_i2 + Σ_j k(d_ij)(X_j - X_i) dt
+k(d)=k₀/d, seed 684, N=1000, ESP32 mesh 5W <1J <1mJ/node
 
-- Φ(t) = Spacetime Stability Field — Our 3D Universe is a bubble
-- V(Φ)=0.25Φ⁴-0.5Φ², V'=Φ³-Φ — Double-well → Effective V_eff=0.375Φ⁴-0.5Φ² with M_stab
-- g(Φ)=0.3 proxy for H^{3/2}/2π (v2.1.0 constant), v1 was 0.8(1+0.2Φ²)
-- dW_t = Eternal Instability Background (Infinity)
-- M_stab=0.5Φ³ = **Master Stability Regulator [MY INVENTION] — Universal**
+Result (as control, not field): 162 escapes → 0 escapes, Var 0.2203 → 0.1217 (-44.76%), rho 0.02→0.909→0.974→0.991 — engineering stabilization works.
 
-Unifies 3 things in ONE:
-1. 3D Stability = Maximus Bubble fixed point Φ=±1 → ±0.816 with M_stab
-2. Black Holes = Extreme Fixed Points ∇V=0
-3. Big Bang = Noise-induced nucleation g dW_t
+Use cases:
+- Swarm robotics / CubeSat thermal analogue (Peraza 2025)
+- Microbubble synchronization analogue (Zhang 2025 Small)
+- Classroom demo of distance-dependent coupling suppressing Kramers escape
 
-**v3.1 Extension — M-Stab as Universal Regulator:**
-Same equation now proven universal: flux qubit α=0.5, finance breaker +0.5X³, BH evaporation control g 0.3→0.08
+### What It Does NOT Prove (After v2.1 Autopsy Sec 2.4)
 
-**GTI-1.0 FINAL Extension:** M_stab universal across domains, Sigma Theorem `E_steady = Σ²/2κ(1-ρ) → 0` — See https://github.com/Nasir684/GTI-General-Theory-of-Instability
+Does NOT prove universal M_stab=0.5Φ³ field. M_stab entered Kramers τ = (2π/√(κ_a κ_s)) exp(2ΔV/g²) with wrong sign at fundamental level — would accelerate, not suppress. Withdrawn as field.
 
-## 2. Numerical Proof — SDE Simulations v4.2 seed 684
+Twin-noise shared σ_s correlation is engineered common-mode, not fundamental non-locality axiom A1.
 
-**v1 Proof Sept 17 (historical simulation):**
-![Bubble Proof](nasir_sde.png)
-![Probability](nasir_hist.png)
-Without M_stab diverges. With M_stab locks to -1. — **Simulation output v4.2 SIM**
+### How To Cite Correctly Now
 
-**v2.1.0 FINAL Proof Sept 20 Wana Locked Form A — Simulation:**
-- 10k iterations mean -0.82 var 0.12 stable — **SIM**
-- Without M_stab blow-up at ~1500 steps (Starobinsky 1986)
-- 6 Figures A/B + Fig2-Fig5 + PDF + DOCX 11 sections in Zenodo 22852524
+> Khan, Nasir (2026) GTI Control Module: SDE-Physics-Bubble-Maximus — Distance-dependent coupling as engineering analogue for enhanced dwell in GTI framework. https://github.com/Nasir684/SDE-Physics-Bubble-Maximus — Fundamental layer: GTI v2.1 https://github.com/Nasir684/GTI-v2.1-eternal-instability
 
-**v3.1 Proof Sep 20 Wana — Full Fokker-Planck + Mao p=4 + 10k runs — Simulation:**
-- Fokker-Planck stationary P_s=N exp(-2V/g²) N≈0.85 Var0=0.2203→VarM=0.1217 44.76% reduction
-- Euler dt=1e-3 T=100 N=100k runs=10k X0=0.816 g=0.3: Var 0.219→0.119 matches FP, escapes 162/10k→0/10k, long-time Kramers 1.6e-5→3.2e-8
-- Mao p=4: x·f+(p-1)/2|g|²≤C(1+|x|²) with C=1.0 p=4 → E[sup|X|⁴]<∞ no blow-up
-- K=V'' 1.0→2.0 base (2.0→3.0 scaled) 0.5→1.0 normalized
+### Connection to v2.1
 
-**Locked Code v2.1.0 & v3.1 — Simulation v4.2:**
-```python
-import numpy as np
-T=10.0; N=10000; dt=T/N
-Phi=np.zeros(N); Phi[0]=0.1
-for i in range(1,N):
-    Vp=Phi[i-1]**3 - Phi[i-1]
-    Mstab=0.5*Phi[i-1]**3
-    g=0.3
-    dW=np.random.normal(0,np.sqrt(dt))
-    Phi[i]=Phi[i-1] + (-Vp-Mstab)*dt + g*dW
+v2.1 width schedule W_n is intrinsic. This repo's k(d) is extrinsic analogue: you widen effective saddle by adding coupling. Same outcome (longer τ), different origin (engineered vs intrinsic).
+
+Both repos stay active — one fundamental (v2.1), one control (this). LIGO claims remain withdrawn from both until independent V_eff.
+
+**Civilian Only <1J total ITAR-free EAR99 | Wana Lab 2026**
